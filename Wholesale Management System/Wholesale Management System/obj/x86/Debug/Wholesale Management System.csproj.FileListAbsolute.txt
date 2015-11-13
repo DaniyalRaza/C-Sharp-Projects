@@ -1,0 +1,21 @@
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\bin\Debug\Wholesale Management System.exe
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\bin\Debug\Wholesale Management System.exe.config
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.AddNewStock.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.LoginForm.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.MainScreen.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.OutOfStock.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.StocksScreen.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.Properties.Resources.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.Suppliers.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale Management System.exe
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale Management System.pdb
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\bin\Debug\Wholesale Management System.pdb
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.AddExistingStock.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.CustomersScreen.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.AddSale.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale Management System.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale Management System.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.AddCustomer.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.SalesRecord.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.GoodsBoughtWindow.resources
+C:\Users\Administrator\Desktop\WholesaleManagement\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.SalesReport.resources
