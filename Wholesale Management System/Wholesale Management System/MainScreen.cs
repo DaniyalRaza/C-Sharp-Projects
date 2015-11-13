@@ -14,6 +14,7 @@ namespace Wholesale_Management_System
         public MainScreen()
         {
             InitializeComponent();
+            
         }
 
         private void newStockToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +57,30 @@ namespace Wholesale_Management_System
         {
             SalesRecord salesRecord = new SalesRecord();
             salesRecord.Show();
+        }
+
+        private void salesReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SalesReport salesReport = new SalesReport();
+            salesReport.Show();
+        }
+
+        private void qToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MainScreen_Load(object sender, EventArgs e)
+        {
+
+           
+            
+        }
+
+        private void addSaleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddSale addSale = new AddSale();
+            addSale.Show();
         }
 
         

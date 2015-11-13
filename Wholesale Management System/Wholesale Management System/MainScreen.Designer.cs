@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stocksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +44,7 @@
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,9 +64,18 @@
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.qToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // qToolStripMenuItem
+            // 
+            this.qToolStripMenuItem.Name = "qToolStripMenuItem";
+            this.qToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.qToolStripMenuItem.Text = "Quit";
+            this.qToolStripMenuItem.Click += new System.EventHandler(this.qToolStripMenuItem_Click);
             // 
             // stocksToolStripMenuItem
             // 
@@ -147,7 +158,8 @@
             // 
             this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addSaleToolStripMenuItem,
-            this.salesRecordToolStripMenuItem});
+            this.salesRecordToolStripMenuItem,
+            this.salesReportToolStripMenuItem});
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
             this.salesToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.salesToolStripMenuItem.Text = "Sales";
@@ -157,6 +169,7 @@
             this.addSaleToolStripMenuItem.Name = "addSaleToolStripMenuItem";
             this.addSaleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addSaleToolStripMenuItem.Text = "Add Sale";
+            this.addSaleToolStripMenuItem.Click += new System.EventHandler(this.addSaleToolStripMenuItem_Click);
             // 
             // salesRecordToolStripMenuItem
             // 
@@ -164,6 +177,13 @@
             this.salesRecordToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.salesRecordToolStripMenuItem.Text = "Sales Record";
             this.salesRecordToolStripMenuItem.Click += new System.EventHandler(this.salesRecordToolStripMenuItem_Click);
+            // 
+            // salesReportToolStripMenuItem
+            // 
+            this.salesReportToolStripMenuItem.Name = "salesReportToolStripMenuItem";
+            this.salesReportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salesReportToolStripMenuItem.Text = "Sales Report";
+            this.salesReportToolStripMenuItem.Click += new System.EventHandler(this.salesReportToolStripMenuItem_Click);
             // 
             // MainScreen
             // 
@@ -174,6 +194,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainScreen";
             this.Text = "MainScreen";
+            this.Load += new System.EventHandler(this.MainScreen_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -198,5 +219,7 @@
         private System.Windows.Forms.ToolStripMenuItem addSaleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salesRecordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salesReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem qToolStripMenuItem;
     }
 }

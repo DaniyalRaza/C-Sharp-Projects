@@ -40,6 +40,7 @@ namespace Wholesale_Management_System
                     while (databaseSingleton.dataReader.Read()){
                         currentUser.username = databaseSingleton.dataReader.GetValue(0).ToString();
                         currentUser.role = databaseSingleton.dataReader.GetValue(1).ToString();
+                        this.Hide();
                         MainScreen mainScreen = new MainScreen();
                         mainScreen.Show();
                     }
