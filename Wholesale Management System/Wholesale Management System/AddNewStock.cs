@@ -95,7 +95,7 @@ namespace Wholesale_Management_System
 
         private void AddNewStock_Load(object sender, EventArgs e)
         {
-            populateGoodsComboBox("SELECT Goods.goodID, Goods.goodName FROM Goods INNER JOIN Stocks ON Goods.goodID <> Stocks.goodID");
+            populateGoodsComboBox("SELECT goodID,goodName FROM Goods WHERE (goodID NOT IN  (SELECT  goodID FROM  Stocks))");
         }
 
         private void addStockButton_Click(object sender, EventArgs e)
