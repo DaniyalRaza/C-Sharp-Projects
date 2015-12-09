@@ -83,6 +83,52 @@ namespace Wholesale_Management_System
             addSale.Show();
         }
 
+        private void defaultersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Defaulters defaulters = new Defaulters();
+            defaulters.Show();
+        }
+
+        private void updateCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateCustomer updateCustomer = new UpdateCustomer();
+            updateCustomer.Show();
+        }
+
+        private void addGoodsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddGoods addGoods = new AddGoods();
+            addGoods.Show();
+        }
+
+        private void addSupplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddSupplier addSupplier = new AddSupplier();
+            addSupplier.Show();
+        }
+
+        private void goodsListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Goods_List goodsList = new Goods_List();
+            goodsList.Show();
+        }
+
+        private void stocksListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StocksScreen stocksScreen = new StocksScreen();
+            stocksScreen.Show();
+        }
+
+        
+
+        private void clearPaymentsToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            ClearPayment clearPayment = new ClearPayment();
+            clearPayment.Show();
+        }
+
+        
+
         
     }
 }

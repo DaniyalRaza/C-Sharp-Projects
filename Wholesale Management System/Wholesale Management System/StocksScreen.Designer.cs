@@ -38,17 +38,17 @@
             this.stocksGridView.AllowUserToDeleteRows = false;
             this.stocksGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.stocksGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.stocksGridView.Location = new System.Drawing.Point(12, 28);
+            this.stocksGridView.Location = new System.Drawing.Point(12, 12);
             this.stocksGridView.Name = "stocksGridView";
             this.stocksGridView.ReadOnly = true;
-            this.stocksGridView.Size = new System.Drawing.Size(560, 324);
+            this.stocksGridView.Size = new System.Drawing.Size(348, 123);
             this.stocksGridView.TabIndex = 1;
             // 
             // StocksScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 562);
+            this.ClientSize = new System.Drawing.Size(372, 150);
             this.Controls.Add(this.stocksGridView);
             this.Name = "StocksScreen";
             this.Text = "Stocks Screen";

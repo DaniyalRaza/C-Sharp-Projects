@@ -10,9 +10,9 @@ using System.Data.SqlClient;
 
 namespace Wholesale_Management_System
 {
-    public partial class CustomersScreen : Form
+    public partial class Defaulters : Form
     {
-        public CustomersScreen()
+        public Defaulters()
         {
             InitializeComponent();
         }
@@ -20,10 +20,10 @@ namespace Wholesale_Management_System
         private BindingSource bindingSource1 = new BindingSource();
         private SqlDataAdapter dataAdapter = new SqlDataAdapter();
 
-        private void CustomersScreen_Load(object sender, EventArgs e)
+        private void Defaulters_Load(object sender, EventArgs e)
         {
-            customersDataGridView.DataSource = bindingSource1;
-            GetData("select * from Customers");
+            defaultersGridView.DataSource = bindingSource1;
+            GetData("select * from Customers where dueAmount > 0");
         }
 
         private void GetData(string selectCommand)
@@ -50,14 +50,7 @@ namespace Wholesale_Management_System
                 bindingSource1.DataSource = table;
 
                 // Resize the DataGridView columns to fit the newly loaded content.
-                customersDataGridView.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-
-                foreach(DataGridViewRow row in customersDataGridView.Rows){
-                    if (Convert.ToInt32(row.Cells[4].Value) > 0) {
-                        row.DefaultCellStyle.BackColor = Color.Red;
-                    }
-                }
-
+                defaultersGridView.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
             }
             catch (SqlException)
             {
@@ -66,6 +59,5 @@ namespace Wholesale_Management_System
                     "valid for your system.");
             }
         }
-
     }
 }

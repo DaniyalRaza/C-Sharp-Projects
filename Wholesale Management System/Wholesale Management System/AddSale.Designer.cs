@@ -194,6 +194,7 @@
             0,
             0});
             this.quantityNumericUpDown.ValueChanged += new System.EventHandler(this.quantityNumericUpDown_ValueChanged);
+          
             // 
             // totalAmountLabel
             // 

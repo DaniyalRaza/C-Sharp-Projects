@@ -108,7 +108,7 @@ namespace Wholesale_Management_System
                 var currentTime = DateTime.Now;
                 int stockID = 0;
                 DatabaseSingleton databaseSingleton = DatabaseSingleton.Instance;
-                databaseSingleton.sql = "Update Stocks set quantity=quantity+" + quantity;
+                databaseSingleton.sql = "Update Stocks set quantity=quantity+" + quantity+" where goodID="+goodID;
                 databaseSingleton.connection = new SqlConnection(databaseSingleton.connetionString);
                 databaseSingleton.connection.Open();
                 databaseSingleton.command = new SqlCommand(databaseSingleton.sql, databaseSingleton.connection);

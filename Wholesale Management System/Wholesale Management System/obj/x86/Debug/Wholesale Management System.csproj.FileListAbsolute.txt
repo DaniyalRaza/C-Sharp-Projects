@@ -40,3 +40,9 @@ C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Whol
 C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.Properties.Resources.resources
 C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.Suppliers.resources
 C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale Management System.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.Defaulters.resources
+C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.UpdateCustomer.resources
+C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.AddGoods.resources
+C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.AddSupplier.resources
+C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.Goods_List.resources
+C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.ClearPayment.resources

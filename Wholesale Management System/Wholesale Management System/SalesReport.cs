@@ -22,7 +22,8 @@ namespace Wholesale_Management_System
         {
             fillChart1();
             fillChart2();
-            
+            fillChart3();
+            fillChart4();
         }
 
         private void fillChart1()  
@@ -56,6 +57,7 @@ namespace Wholesale_Management_System
                
                 
                 databaseSingleton.connection.Close();
+
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
@@ -100,7 +102,93 @@ namespace Wholesale_Management_System
                 MessageBox.Show(ex.Message);
             }
 
-        }  
+        }
+
+
+
+
+        private void fillChart3()
+        {
+
+            chart3.Series.RemoveAt(0);
+            chart3.Series.Add("Sales");
+            chart3.Series[0].ChartType = SeriesChartType.Line;
+            chart3.Series[0].BorderWidth = 3;
+            //chart1.Series.Add("Buying");
+            DatabaseSingleton databaseSingleton = DatabaseSingleton.Instance;
+            databaseSingleton.sql = "SELECT SUM(totalBill) AS Amount,CAST(saleDate AS date) AS date1 FROM Sales GROUP BY CAST(saleDate AS date)";
+            databaseSingleton.connection = new SqlConnection(databaseSingleton.connetionString);
+            try
+            {
+                databaseSingleton.connection.Open();
+                databaseSingleton.command = new SqlCommand(databaseSingleton.sql, databaseSingleton.connection);
+
+                DataSet ds = new DataSet();
+                SqlDataAdapter adapter = new SqlDataAdapter(databaseSingleton.sql, databaseSingleton.connection);
+
+
+                adapter.Fill(ds);
+
+                DataView datasource = new DataView(ds.Tables[0]);
+                chart3.DataSource = datasource;
+                chart3.Series[0].XValueMember = "date1";
+                chart3.Series[0].YValueMembers = "Amount";
+                chart3.DataBind();
+
+
+
+
+                databaseSingleton.connection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillChart4()
+        {
+
+            chart4.Series.RemoveAt(0);
+            chart4.Series.Add("Goods");
+            chart4.Series[0].ChartType = SeriesChartType.Pie;
+            //chart1.Series.Add("Buying");
+            DatabaseSingleton databaseSingleton = DatabaseSingleton.Instance;
+            databaseSingleton.sql = "SELECT  Goods.goodName, SUM(GoodsBought.quantity) AS Quantity FROM  GoodsBought INNER JOIN Goods ON GoodsBought.goodID = Goods.goodID GROUP BY GoodsBought.goodID, Goods.goodName";
+            databaseSingleton.connection = new SqlConnection(databaseSingleton.connetionString);
+            try
+            {
+                databaseSingleton.connection.Open();
+                databaseSingleton.command = new SqlCommand(databaseSingleton.sql, databaseSingleton.connection);
+
+                DataSet ds = new DataSet();
+                SqlDataAdapter adapter = new SqlDataAdapter(databaseSingleton.sql, databaseSingleton.connection);
+
+
+                adapter.Fill(ds);
+
+                DataView datasource = new DataView(ds.Tables[0]);
+                chart4.DataSource = datasource;
+                chart4.Series[0].XValueMember = "goodName";
+                chart4.Series[0].YValueMembers = "Quantity";
+                chart4.DataBind();
+
+
+
+
+                databaseSingleton.connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+
+
 
 
     }

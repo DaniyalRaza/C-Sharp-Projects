@@ -119,6 +119,9 @@ namespace Wholesale_Management_System
         {
             int price = Convert.ToInt32(table.Rows[goodsComboBox.SelectedIndex]["price"]);
             totalTextBox.Text = (price * quantityNumericUpDown.Value).ToString();
+
+           
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -127,6 +130,8 @@ namespace Wholesale_Management_System
                 MessageBox.Show("Not enough quantity to add");
                 return;
             }
+
+            
 
             GoodsBought goodBought=new GoodsBought(Convert.ToInt32(goodsComboBox.SelectedValue), goodsComboBox.Text,selectedGoodPrice,Convert.ToInt32(selectedGoodPrice * quantityNumericUpDown.Value),Convert.ToInt32(quantityNumericUpDown.Value));
 
@@ -140,6 +145,13 @@ namespace Wholesale_Management_System
 
         private void confirmSaleButton_Click(object sender, EventArgs e)
         {
+
+
+            if (goodsListGridView.RowCount == 0) {
+                MessageBox.Show("No item is selected to buy");
+                return;
+            }
+
 
             int customerID = Convert.ToInt32(customerComboBox.SelectedValue);
             int totalBill = totalAmount;
@@ -222,6 +234,7 @@ namespace Wholesale_Management_System
            
         }
 
+     
         
         
 
