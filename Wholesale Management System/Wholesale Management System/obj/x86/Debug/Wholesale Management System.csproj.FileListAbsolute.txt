@@ -46,3 +46,4 @@ C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Whol
 C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.AddSupplier.resources
 C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.Goods_List.resources
 C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.ClearPayment.resources
+C:\Users\Administrator\Desktop\C-Sharp-Projects\Wholesale Management System\Wholesale Management System\obj\x86\Debug\Wholesale_Management_System.UpdateSupplier.resources

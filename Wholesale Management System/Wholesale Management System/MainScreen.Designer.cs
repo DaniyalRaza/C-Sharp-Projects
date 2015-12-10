@@ -49,10 +49,11 @@
             this.addSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearPaymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addGoodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goodsListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearPaymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateSupplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,7 +138,8 @@
             // 
             this.suppliersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.suppliersListToolStripMenuItem,
-            this.addSupplierToolStripMenuItem});
+            this.addSupplierToolStripMenuItem,
+            this.updateSupplierToolStripMenuItem});
             this.suppliersToolStripMenuItem.Name = "suppliersToolStripMenuItem";
             this.suppliersToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.suppliersToolStripMenuItem.Text = "Suppliers";
@@ -145,14 +147,14 @@
             // suppliersListToolStripMenuItem
             // 
             this.suppliersListToolStripMenuItem.Name = "suppliersListToolStripMenuItem";
-            this.suppliersListToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.suppliersListToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.suppliersListToolStripMenuItem.Text = "Suppliers List";
             this.suppliersListToolStripMenuItem.Click += new System.EventHandler(this.suppliersListToolStripMenuItem_Click);
             // 
             // addSupplierToolStripMenuItem
             // 
             this.addSupplierToolStripMenuItem.Name = "addSupplierToolStripMenuItem";
-            this.addSupplierToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.addSupplierToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.addSupplierToolStripMenuItem.Text = "Add Supplier";
             this.addSupplierToolStripMenuItem.Click += new System.EventHandler(this.addSupplierToolStripMenuItem_Click);
             // 
@@ -227,6 +229,13 @@
             this.salesReportToolStripMenuItem.Text = "Sales Report";
             this.salesReportToolStripMenuItem.Click += new System.EventHandler(this.salesReportToolStripMenuItem_Click);
             // 
+            // clearPaymentsToolStripMenuItem
+            // 
+            this.clearPaymentsToolStripMenuItem.Name = "clearPaymentsToolStripMenuItem";
+            this.clearPaymentsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.clearPaymentsToolStripMenuItem.Text = "Clear Payments";
+            this.clearPaymentsToolStripMenuItem.Click += new System.EventHandler(this.clearPaymentsToolStripMenuItem_Click_1);
+            // 
             // goodsToolStripMenuItem
             // 
             this.goodsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -250,12 +259,12 @@
             this.goodsListToolStripMenuItem.Text = "Goods List";
             this.goodsListToolStripMenuItem.Click += new System.EventHandler(this.goodsListToolStripMenuItem_Click);
             // 
-            // clearPaymentsToolStripMenuItem
+            // updateSupplierToolStripMenuItem
             // 
-            this.clearPaymentsToolStripMenuItem.Name = "clearPaymentsToolStripMenuItem";
-            this.clearPaymentsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.clearPaymentsToolStripMenuItem.Text = "Clear Payments";
-            this.clearPaymentsToolStripMenuItem.Click += new System.EventHandler(this.clearPaymentsToolStripMenuItem_Click_1);
+            this.updateSupplierToolStripMenuItem.Name = "updateSupplierToolStripMenuItem";
+            this.updateSupplierToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.updateSupplierToolStripMenuItem.Text = "Update Supplier";
+            this.updateSupplierToolStripMenuItem.Click += new System.EventHandler(this.updateSupplierToolStripMenuItem_Click);
             // 
             // MainScreen
             // 
@@ -301,5 +310,6 @@
         private System.Windows.Forms.ToolStripMenuItem goodsListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stocksListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearPaymentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateSupplierToolStripMenuItem;
     }
 }

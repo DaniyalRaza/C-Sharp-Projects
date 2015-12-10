@@ -127,6 +127,12 @@ namespace Wholesale_Management_System
             clearPayment.Show();
         }
 
+        private void updateSupplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateSupplier updateSupplier = new UpdateSupplier();
+            updateSupplier.Show();
+        }
+
         
 
         
