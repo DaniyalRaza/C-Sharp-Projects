@@ -73,6 +73,13 @@ namespace Wholesale_Management_System
         private void MainScreen_Load(object sender, EventArgs e)
         {
 
+            
+
+            if (CurrentUser.Instance.role == "Manager   ") {
+                MessageBox.Show(CurrentUser.Instance.role);
+                salesRecordToolStripMenuItem.Enabled = false;
+                salesReportToolStripMenuItem.Enabled = false;
+            }
            
             
         }

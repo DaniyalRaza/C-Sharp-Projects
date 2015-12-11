@@ -100,6 +100,13 @@ namespace Wholesale_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+
+            if (paymentCheckedListBox.Items.Count == 0) {
+                MessageBox.Show("No Payments to clear");
+                return;
+            }
+
             int totalClearedPayment=0;
 
             DatabaseSingleton databaseSingleton = DatabaseSingleton.Instance;

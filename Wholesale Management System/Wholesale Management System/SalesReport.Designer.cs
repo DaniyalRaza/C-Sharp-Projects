@@ -105,13 +105,13 @@
             this.chart4.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.chart4.Legends.Add(legend4);
-            this.chart4.Location = new System.Drawing.Point(203, 330);
+            this.chart4.Location = new System.Drawing.Point(355, 332);
             this.chart4.Name = "chart4";
             series4.ChartArea = "ChartArea1";
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             this.chart4.Series.Add(series4);
-            this.chart4.Size = new System.Drawing.Size(300, 300);
+            this.chart4.Size = new System.Drawing.Size(345, 300);
             this.chart4.TabIndex = 3;
             this.chart4.Text = "chart4";
             // 
